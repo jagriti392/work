@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Periodic Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .periodic-table {
+      display: grid;
+      grid-template-columns: repeat(18, 60px);
+      grid-gap: 10px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .element {
+      width: 60px;
+      height: 60px;
+      background-color: #6bc5d2;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      border-radius: 5px;
+      font-size: 0.8rem;
+    }
+
+    .element.hydrogen { grid-column: 1; grid-row: 1; }
+    .element.helium { grid-column: 18; grid-row: 1; }
+    .element.lithium { grid-column: 1; grid-row: 2; }
+    .element.beryllium { grid-column: 2; grid-row: 2; }
+    .element.boron { grid-column: 13; grid-row: 2; }
+    .element.carbon { grid-column: 14; grid-row: 2; }
+    .element.nitrogen { grid-column: 15; grid-row: 2; }
+    .element.oxygen { grid-column: 16; grid-row: 2; }
+    .element.fluorine { grid-column: 17; grid-row: 2; }
+    .element.neon { grid-column: 18; grid-row: 2; }
+  </style>
+</head>
+<body>
+  <div class="periodic-table">
+    <div class="element hydrogen">
+      <div>H</div>
+      <div>1</div>
+    </div>
+    <div class="element helium">
+      <div>He</div>
+      <div>2</div>
+    </div>
+    <div class="element lithium">
+      <div>Li</div>
+      <div>3</div>
+    </div>
+    <div class="element beryllium">
+      <div>Be</div>
+      <div>4</div>
+    </div>
+    <div class="element boron">
+      <div>B</div>
+      <div>5</div>
+    </div>
+    <div class="element carbon">
+      <div>C</div>
+      <div>6</div>
+    </div>
+    <div class="element nitrogen">
+      <div>N</div>
+      <div>7</div>
+    </div>
+    <div class="element oxygen">
+      <div>O</div>
+      <div>8</div>
+    </div>
+    <div class="element fluorine">
+      <div>F</div>
+      <div>9</div>
+    </div>
+    <div class="element neon">
+      <div>Ne</div>
+      <div>10</div>
+    </div>
+  </div>
+</body>
+</html>
